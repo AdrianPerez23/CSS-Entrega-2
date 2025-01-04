@@ -1,0 +1,186 @@
+/* styles.css */
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  background: rgb(248, 245, 245);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left-column,
+.right-column {
+  padding: 20px;
+}
+
+.Nombre {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.foto {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 100%;
+  padding-bottom: 10%;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+}
+
+.Datos {
+  list-style: none; /* Quitar puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Datos li {
+  background-color: whitesmoke;
+  color: #233a5f;
+  overflow: hidden;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: center;
+  font-size: 1.5vw; /* Tamaño de texto relativo al ancho de la pantalla */
+  margin-bottom: 1.5vw;
+}
+
+.skills ul {
+  list-style-type: disc; /* Asegura que aparezcan los puntos */
+  margin-left: 20px; /* Espaciado a la izquierda para que los puntos estén visibles */
+  padding-left: 0;
+}
+
+.skills li {
+  margin-bottom: 5px; /* Espaciado entre los elementos de la lista */
+}
+
+.hobbies ul {
+  list-style-type: disc; /* Asegura que aparezcan los puntos */
+  margin-left: 20px; /* Espaciado a la izquierda para que los puntos estén visibles */
+  padding-left: 0;
+}
+
+.hobbies li {
+  margin-bottom: 5px; /* Espaciado entre los elementos de la lista */
+}
+
+.left-column {
+  width: 30%;
+  background-color: #233a5f;
+  color: whitesmoke;
+}
+
+.links ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Acomoda los elementos en varias filas si es necesario */
+  gap: 15px; /* Espacio entre elementos */
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 10px); /* Dos elementos por fila */
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1em;
+  color: #56acf3;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el icono y el texto */
+}
+
+.links a:hover {
+  color: #ffd700; /* Cambia el color al pasar el cursor */
+}
+
+.links img {
+  width: 24px;
+  height: 24px;
+}
+
+.right-column {
+  text-align: justify;
+  width: 70%;
+}
+
+h1,
+.h2-right {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0;
+  color: #233a5f;
+}
+
+.h2-right {
+  border-bottom: 2px solid #233a5f;
+  padding-bottom: 5px;
+  padding: 2%;
+  width: 65%;
+}
+
+.experiencia {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.logo-orange {
+  justify-content: flex-start;
+  width: 20%;
+  height: 60%; /* Fija la altura del contenedor */
+  overflow: hidden; /* Oculta la parte de la imagen que sobresalga */
+}
+
+.logo-orange {
+  width: 20%;
+  height: 60%; /* Tamaño de la imagen */
+  object-fit: cover; /* Ajusta el contenido dentro del contenedor */
+}
+
+.trabajo-puesto {
+  font-weight: bold;
+}
+
+.trabajo-tiempo {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(233, 231, 231);
+  background-color: #233a5f; /* Fondo azul oscuro */
+  padding: 1px;
+  text-align: center;
+  margin-top: 100px;
+}
