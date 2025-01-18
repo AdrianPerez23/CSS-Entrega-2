@@ -1,4 +1,30 @@
 /* styles.css */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Móviles pequeños */
+@media (max-width: 576px) {
+}
+
+/* Móviles medianos y grandes */
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+/* Tabletas */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Computadoras de escritorio pequeñas */
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* Computadoras de escritorio grandes */
+@media (min-width: 1201px) {
+  /* Estilos para pantallas grandes de escritorio */
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -23,27 +49,20 @@ body {
 .Nombre {
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
-  font-size: 50px;
+  font-size: 200%;
   text-align: center;
   border-bottom: 2px solid whitesmoke;
 }
 
 .foto {
   width: 100%;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 100%;
-  padding-bottom: 10%;
-}
-
-.foto {
-  width: 100%;
   height: 100%;
-  object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+  object-fit: cover; /* Recorta la imagen proporcionalmente */
+  border-radius: 50%; /* Forma redonda */
 }
 
 .Datos {
-  list-style: none; /* Quitar puntos de la lista */
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
@@ -127,37 +146,49 @@ body {
   width: 70%;
 }
 
-h1,
-.h2-right {
+/* PARTE DERECHA */
+
+h1 {
   font-family: 'Poppins', sans-serif;
   margin-top: 0;
   color: #233a5f;
 }
 
 .h2-right {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0;
+  color: #233a5f;
   border-bottom: 2px solid #233a5f;
   padding-bottom: 5px;
   padding: 2%;
   width: 65%;
 }
+.educacion {
+  display: grid;
+  grid-template-columns: 1fr 6fr; /* Columna 1: fechas, columna 2: texto */
+  gap: 10px;
+}
+
+.educacion-fechas {
+  margin-left: 20px;
+}
 
 .experiencia {
   display: flex;
-  align-items: center; /* Centra verticalmente el contenido */
+  align-items: flex-start; /* Centra verticalmente el contenido */
   gap: 20px; /* Espacio entre la imagen y el texto */
+  margin-right: 10%;
 }
 
 .logo-orange {
-  justify-content: flex-start;
-  width: 20%;
-  height: 60%; /* Fija la altura del contenedor */
-  overflow: hidden; /* Oculta la parte de la imagen que sobresalga */
+  margin-top: 19px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain; /* Alternativa a cover */
 }
 
-.logo-orange {
-  width: 20%;
-  height: 60%; /* Tamaño de la imagen */
-  object-fit: cover; /* Ajusta el contenido dentro del contenedor */
+.trabajo-actual {
+  margin-top: 0;
 }
 
 .trabajo-puesto {
@@ -179,8 +210,8 @@ ul li {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: rgb(233, 231, 231);
-  background-color: #233a5f; /* Fondo azul oscuro */
+  background-color: #233a5f;
   padding: 1px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
