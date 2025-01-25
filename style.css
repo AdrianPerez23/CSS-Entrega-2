@@ -4,25 +4,12 @@
   box-sizing: border-box;
 }
 
-/* Móviles pequeños */
-@media (max-width: 576px) {
-}
-
-/* Móviles medianos y grandes */
-@media (min-width: 577px) and (max-width: 768px) {
-}
-
 /* Tabletas */
 @media (min-width: 769px) and (max-width: 1024px) {
 }
 
-/* Computadoras de escritorio pequeñas */
-@media (min-width: 1025px) and (max-width: 1200px) {
-}
-
 /* Computadoras de escritorio grandes */
 @media (min-width: 1201px) {
-  /* Estilos para pantallas grandes de escritorio */
 }
 
 body {
@@ -215,3 +202,33 @@ ul li {
   text-align: center;
   margin-top: 150px;
 }
+/* Estilos responsivos */
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column; /* Cambia a una sola columna */
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Ambas columnas ocupan el ancho completo */
+  }
+
+  .educacion {
+    grid-template-columns: 1fr; /* Solo una columna */
+  }
+
+  .experiencia {
+    flex-direction: column; /* Cambia la dirección del contenido */
+    margin-right: 0;
+  }
+
+  .h2-right {
+    text-align: center; /* Centra los encabezados */
+  }
+
+  .links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
